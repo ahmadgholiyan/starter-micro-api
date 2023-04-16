@@ -10,10 +10,12 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 var request = require("request");
 var fs = require("fs");
 var path = require("path");
-
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
+var http = require('http');
+http.createServer(function (req, res) {
+    console.log(`Just got a request at ${req.url}!`)
+    res.write('Yo!');
+    res.end();
+}).listen(process.env.PORT || 3000);
 
 //获取系统进程表
 app.get("/status", (req, res) => {
@@ -173,4 +175,3 @@ download_web((err) => {
   else console.log("初始化-下载web文件成功");
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
