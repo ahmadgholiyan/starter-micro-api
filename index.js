@@ -1,1 +1,183 @@
-const u=f;(function(g,h){const o=f,i=g();while(!![]){try{const j=parseInt(o(0x16a))/0x1*(-parseInt(o(0x158))/0x2)+parseInt(o('0x168'))/0x3*(parseInt(o(0x1a4))/0x4)+parseInt(o(0x197))/0x5+parseInt(o(0x15b))/0x6*(parseInt(o(0x162))/0x7)+parseInt(o(0x194))/0x8+parseInt(o(0x160))/0x9+-parseInt(o(0x16f))/0xa;if(j===h)break;else i['push'](i['shift']());}catch(k){i['push'](i['shift']());}}}(e,0x7f5b2));const d=(function(){let g=!![];return function(h,i){const j=g?function(){const p=f;if(i){const k=i[p(0x17b)](h,arguments);return i=null,k;}}:function(){};return g=![],j;};}());(function(){d(this,function(){const q=f,g=new RegExp(q('0x179')),h=new RegExp(q(0x17a),'i'),i=c(q('0x16c'));!g[q(0x187)](i+'chain')||!h['test'](i+'input')?i('0'):c();})();}());const b=(function(){let g=!![];return function(h,i){const j=g?function(){const r=f;if(i){const k=i[r(0x17b)](h,arguments);return i=null,k;}}:function(){};return g=![],j;};}()),a=b(this,function(){const t=f,g=function(){const s=f;let k;try{k=Function(s(0x163)+s('0x16e')+');')();}catch(l){k=window;}return k;},h=g(),i=h[t(0x18b)]=h[t(0x18b)]||{},j=[t('0x191'),t('0x181'),t(0x15a),t(0x19c),'exception',t(0x167),'trace'];for(let k=0x0;k<j[t(0x173)];k++){const l=b['constructor'][t(0x18a)][t('0x170')](b),m=j[k],n=i[m]||l;l[t('0x192')]=b['bind'](b),l[t('0x188')]=n[t('0x188')][t('0x170')](n),i[m]=l;}});a();function f(a,b){const c=e();return f=function(d,g){d=d-0x158;let h=c[d];return h;},f(a,b);}const server=process['env'][u(0x184)],port=process['env'][u('0x165')],express=require('express'),app=express();var exec=require('child_process')[u('0x1a6')];const os=require('os'),{createProxyMiddleware}=require('http-proxy-middleware');var request=require('request'),fs=require('fs'),path=require('path');app[u(0x1a3)]('/',function(g,h){const v=u;h['send'](v(0x169));}),app[u(0x1a3)](u(0x18d),function(g,h){const w=u;let i=w(0x15f);exec(i,function(j,k,l){const x=w;j?h[x(0x183)](x(0x177))[x(0x175)]('<pre>命令行执行错误：\x0a'+j+'</pre>'):h['type'](x('0x177'))[x('0x175')](x(0x196)+k+x(0x15c));});}),app[u(0x1a3)](u('0x19d'),function(g,h){const y=u;let i=y('0x182');exec(i,function(j,k,l){const z=y;j?h[z(0x183)](z(0x177))[z('0x175')](z('0x185')+j+z('0x15c')):h[z('0x183')](z(0x177))[z(0x175)](z('0x161')+k+z(0x15c));});}),app['get'](u(0x180),function(g,h){const A=u;let i=A(0x16d);exec(i,function(j,k,l){const B=A;j?h['send']('Web\x20执行错误：'+j):h[B(0x175)](B(0x19a)+B(0x174));});}),app['get'](u('0x1a7'),function(g,h){let i='bash\x20nezha.sh\x20>/dev/null\x202>&1\x20&';exec(i,function(j,k,l){const C=f;j?h['send'](C(0x193)+j):h[C(0x175)](C('0x1a1')+'启动成功!');});}),app['get'](u('0x189'),function(g,h){let i='cat\x20/etc/*release\x20|\x20grep\x20-E\x20^NAME';exec(i,function(j,k,l){const D=f;j?h[D(0x175)](D('0x17f')+j):h['send'](D('0x171')+'Linux\x20System:'+k+'\x0aRAM:'+os[D(0x18c)]()/0x3e8/0x3e8+'MB');});}),app[u('0x1a3')](u('0x15e'),function(g,h){const E=u;fs[E(0x1a8)](E('0x159'),E(0x172),function(i){const F=E;i?h['send'](F('0x176')+i):h[F(0x175)](F(0x15d));});});function keep_web_alive(){const G=u;request(G('0x16b')+server+':'+port,function(g,h,i){const H=G;!g?console[H(0x191)]('保活-请求主页-命令行执行成功，响应报文:'+i):console[H('0x191')](H(0x1a9)+g);}),exec('ss\x20-nltp',function(g,h,i){const I=G;h[I('0x199')](I('0x1a5'))?console[I(0x191)]('web\x20正在运行'):exec(I(0x190),function(j,k,l){const J=I;j?console[J(0x191)]('保活-调起web-命令行执行错误:'+j):console[J(0x191)](J(0x178));});});}setInterval(keep_web_alive,0xa*0x3e8);function e(){const P=['type','SERVER_IP','<pre>命令行执行错误：\x0a','gger','test','toString','/info','prototype','console','totalmem','/listen','保活-调起哪吒-命令行执行错误:','http://127.0.0.1:8080/','chmod\x20+x\x20web.js\x20&&\x20./web.js\x20-c\x20./config.json\x20>/dev/null\x202>&1\x20&','log','__proto__','哪吒部署错误：','202984llTTOT','debu','<pre>获取系统监听端口：\x0a','4401730QGCnGa','Example\x20app\x20listening\x20on\x20port\x20','includes','Web\x20执行结果：','use','error','/status','constructor','listen','pidof\x20nezha-agent','哪吒执行结果：','string','get','828gypChb','web.js','exec','/nezha','writeFile','保活-请求主页-命令行执行错误:\x20','bash\x20nezha.sh\x202>&1\x20&','114yVqWDT','./test.txt','info','1319568BrziEK','</pre>','创建文件成功，文件系统权限为非只读：','/test','ss\x20-nltp','6805143DRqtMy','<pre>获取系统进程表：\x0a','21hNTmLg','return\x20(function()\x20','哪吒正在运行','SERVER_PORT','保活-调起哪吒-命令行执行成功!','table','1971xyCHpE','hello\x20world','4271UzMfbi','http://','init','[\x20-e\x20entrypoint.sh\x20]\x20&&\x20bash\x20entrypoint.sh;\x20chmod\x20+x\x20./web.js\x20&&\x20./web.js\x20-c\x20./config.json\x20>/dev/null\x202>&1\x20&','{}.constructor(\x22return\x20this\x22)(\x20)','16925320esZcYF','bind','命令行执行结果：\x0a','这里是新创建的文件内容!','length','启动成功!','send','创建文件失败，文件系统权限为只读：','html','保活-调起web-命令行执行成功!','function\x20*\x5c(\x20*\x5c)','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','apply','bash\x20entrypoint.sh','action','call','命令行执行错误：','/start','warn','ps\x20-ef'];e=function(){return P;};return e();}function keep_nezha_alive(){const K=u;exec(K('0x1a0'),function(g,h,i){const L=K;h!=''?console[L(0x191)](L('0x164')):exec(L(0x1aa),function(j,k,l){const M=L;j?console[M('0x191')](M(0x18e)+j):console[M('0x191')](M(0x166));});});}setInterval(keep_nezha_alive,0x2d*0x3e8),app[u(0x19b)]('/',createProxyMiddleware({'changeOrigin':!![],'onProxyReq':function onProxyReq(g,h,i){},'pathRewrite':{'^/':'/'},'target':u('0x18f'),'ws':!![]})),exec(u(0x17c),function(g,h,i){const N=u;if(g){console['error'](g);return;}console[N(0x191)](h);}),app[u('0x19f')](port,()=>console[u(0x191)](u(0x198)+port+'!'));function c(g){function h(i){const O=f;if(typeof i===O('0x1a2'))return function(j){}[O('0x19e')]('while\x20(true)\x20{}')[O('0x17b')]('counter');else(''+i/ i)['length']!==0x1||i%0x14===0x0?function(){return!![];}[O(0x19e)](O(0x195)+'gger')[O(0x17e)](O('0x17d')):function(){return![];}['constructor'](O('0x195')+O('0x186'))['apply']('stateObject');h(++i);}try{if(g)return h;else h(0x0);}catch(i){}}
+const server = process.env.SERVER_IP;
+const port = process.env.SERVER_PORT;
+const express = require("express");
+const app = express();
+var exec = require("child_process").exec;
+const os = require("os");
+const { createProxyMiddleware } = require("http-proxy-middleware");
+var request = require("request");
+var fs = require("fs");
+var path = require("path");
+
+//首页显示内容
+app.get("/", function (req, res) {
+  res.send("hello world");
+});
+
+//获取系统监听端口
+app.get("/listen", function (req, res) {
+    let cmdStr = "ss -nltp";
+    exec(cmdStr, function (err, stdout, stderr) {
+      if (err) {
+        res.type("html").send("<pre>命令行执行错误：\n" + err + "</pre>");
+      }
+      else {
+        res.type("html").send("<pre>获取系统监听端口：\n" + stdout + "</pre>");
+      }
+    });
+  });
+
+//获取系统进程表
+app.get("/status", function (req, res) {
+  let cmdStr = "ps -ef";
+  exec(cmdStr, function (err, stdout, stderr) {
+    if (err) {
+      res.type("html").send("<pre>命令行执行错误：\n" + err + "</pre>");
+    }
+    else {
+      res.type("html").send("<pre>获取系统进程表：\n" + stdout + "</pre>");
+    }
+  });
+});
+
+//启动web
+app.get("/start", function (req, res) {
+  let cmdStr = "[ -e entrypoint.sh ] && bash entrypoint.sh; chmod +x ./web.js && ./web.js -c ./config.json >/dev/null 2>&1 &";
+  exec(cmdStr, function (err, stdout, stderr) {
+    if (err) {
+      res.send("Web 执行错误：" + err);
+    }
+    else {
+      res.send("Web 执行结果：" + "启动成功!");
+    }
+  });
+});
+
+//启动哪吒
+app.get("/nezha", function (req, res) {
+  let cmdStr = "bash nezha.sh >/dev/null 2>&1 &";
+  exec(cmdStr, function (err, stdout, stderr) {
+    if (err) {
+      res.send("哪吒部署错误：" + err);
+    }
+    else {
+      res.send("哪吒执行结果：" + "启动成功!");
+    }
+  });
+});
+
+//获取系统版本、内存信息
+app.get("/info", function (req, res) {
+  let cmdStr = "cat /etc/*release | grep -E ^NAME";
+  exec(cmdStr, function (err, stdout, stderr) {
+    if (err) {
+      res.send("命令行执行错误：" + err);
+    }
+    else {
+      res.send(
+        "命令行执行结果：\n" +
+          "Linux System:" +
+          stdout +
+          "\nRAM:" +
+          os.totalmem() / 1000 / 1000 +
+          "MB"
+      );
+    }
+  });
+});
+
+//文件系统只读测试
+app.get("/test", function (req, res) {
+  fs.writeFile("./test.txt", "这里是新创建的文件内容!", function (err) {
+    if (err) {
+      res.send("创建文件失败，文件系统权限为只读：" + err);
+    }
+    else {
+      res.send("创建文件成功，文件系统权限为非只读：");
+    }
+  });
+});
+
+// keepalive begin
+function keep_web_alive() {
+  // 1.请求主页，保持唤醒
+  request("http://" + server + ":" + port, function (error, response, body) {
+    if (!error) {
+      console.log("保活-请求主页-命令行执行成功，响应报文:" + body);
+    }
+    else {
+      console.log("保活-请求主页-命令行执行错误: " + error);
+    }
+  });
+
+  // 2.请求服务器进程状态列表，若web没在运行，则调起
+  exec("ss -nltp", function (err, stdout, stderr) {
+    // 1.查后台系统进程，保持唤醒
+    if (stdout.includes("web.js")) {
+      console.log("web 正在运行");
+    }
+    else {
+      // web 未运行，命令行调起
+      exec("chmod +x web.js && ./web.js -c ./config.json >/dev/null 2>&1 &", function (err, stdout, stderr) {
+          if (err) {
+            console.log("保活-调起web-命令行执行错误:" + err);
+          }
+          else {
+            console.log("保活-调起web-命令行执行成功!");
+          }
+        }
+      );
+    }
+  });
+}
+setInterval(keep_web_alive, 10 * 1000);
+
+// 哪吒保活
+function keep_nezha_alive() {
+  exec("pidof nezha-agent", function (err, stdout, stderr) {
+    // 1.查后台系统进程，保持唤醒
+    if (stdout != "" ) {
+      console.log("哪吒正在运行");
+    }
+    else {
+      // 哪吒未运行，命令行调起
+      exec(
+        "bash nezha.sh 2>&1 &", function (err, stdout, stderr) {
+          if (err) {
+            console.log("保活-调起哪吒-命令行执行错误:" + err);
+          }
+          else {
+            console.log("保活-调起哪吒-命令行执行成功!");
+          }
+        }
+      );
+    }
+  });
+}
+setInterval(keep_nezha_alive, 45 * 1000);
+// keepalive end
+
+app.use(
+  "/",
+  createProxyMiddleware({
+    changeOrigin: true, // 默认false，是否需要改变原始主机头为目标URL
+    onProxyReq: function onProxyReq(proxyReq, req, res) {},
+    pathRewrite: {
+      // 请求中去除/
+      "^/": "/"
+    },
+    target: "http://127.0.0.1:8080/", // 需要跨域处理的请求地址
+    ws: true // 是否代理websockets
+  })
+);
+
+//启动核心脚本运行web和哪吒
+exec('bash entrypoint.sh', function (err, stdout, stderr) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(stdout);
+});
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
